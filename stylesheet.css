@@ -11,8 +11,7 @@ section {
     background-image: radial-gradient(at 0% 100%, rgba(0, 123, 255, 0.15) 0px, transparent 50%), radial-gradient(at 99% 1%, rgba(0, 123, 255, 0.15) 0px, transparent 50%);
     margin: 0;
     color: var(--text-dark);
-    display: flex
-;
+    display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -39,8 +38,10 @@ video{
     position: relative;
     width: 400px;
     height: 450px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    backdrop-filter: blur(50px) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,7 @@ video{
 
 h2{
     font-size: 2em;
-    color: #fff;
+    color: #578bc7;
     text-align: center;
 }
 /*CSS Config for input boxes*/
