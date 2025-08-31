@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@media (max-width: 576px) {
+    .form {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
 
-*{
+    .input-box {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+:root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 section {
     background-color: var(--background-body);
     background-image: radial-gradient(at 0% 100%, rgba(0, 123, 255, 0.15) 0px, transparent 50%), radial-gradient(at 99% 1%, rgba(0, 123, 255, 0.15) 0px, transparent 50%);
@@ -45,30 +61,28 @@ video{
     height: auto;
 }
 
-.form{
-    position: relative;
-    width: 400px;
-    height: 450px;
+.form {
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    backdrop-filter: blur(50px) ;
+    backdrop-filter: blur(50px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
-.form2{
-    position: relative;
-    width: 400px;
-    height: 500px;
+.form2 {
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    backdrop-filter: blur(50px) ;
+    backdrop-filter: blur(50px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 .input-box input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
