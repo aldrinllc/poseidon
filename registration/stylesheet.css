@@ -124,8 +124,15 @@ h2{
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
     -webkit-text-fill-color: #fff !important;
 }
-
-
+video{
+    position: fixed;  /* stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes it fill the screen */
+    z-index: -1;  /* puts it behind everything */
+}
 /*Remember Forgot*/
 .remember-forgot{
     margin: -15px 0 15px;
