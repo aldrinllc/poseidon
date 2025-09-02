@@ -19,7 +19,7 @@
             Your browser does not support the video tag.
         </video>
             <div class="logo">
-                    <a href="../user/dashboard.php">
+                    <a href="../index.html">
                         <img src="../assets/media/img/icon.png">
                     </a>
                 </div>
@@ -53,10 +53,11 @@
         </section>
         <script>
             function register(event){
+                event.preventDefault();
                 var email = document.getElementById("email").value;
                 var password = document.getElementById("password").value;
                 var conpass = document.getElementById("password2").value;
-                var username = document.getElementById("email").value;
+                var username = document.getElementById("username").value;
                 if(password!=conpass){
                     alert("Password do not match");
                     return;
