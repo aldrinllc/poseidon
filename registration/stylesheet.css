@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-*{
+:root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,6 +56,19 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.input-box input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s; /* keeps bg transparent */
+    border-radius: 20px;
+}
+
+.input-box input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: #fff !important;
+    border-radius: 20px;
 }
 
 .form2{
