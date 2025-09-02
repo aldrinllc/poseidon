@@ -24,7 +24,7 @@
                     </a>
                 </div>
             <div class="form2">
-                <form action="upload.php" id="">
+                <form action="" id="">
                 <h2>Register</h2>
                 <div class="input-box">
                         <input type="text" class="email" id="email" required>
@@ -51,6 +51,19 @@
             </form>
             </div>
         </section>
-        
+        <script>
+            function register(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                var conpass = document.getElementById("password2").value;
+                var username = document.getElementById("email").value;
+                if(password!=conpass){
+                    alert("Password do not match");
+                    return;
+                }
+                alert("Registration Successful");
+                window.location.href = "index.html";
+            }
+        </script>
     </body>
 </html>
