@@ -18,12 +18,6 @@ function rsb(event) {
         alert("Invalid invite code.");
         return;
     }
-
-    const formData = new URLSearchParams();
-    formData.append("email", email);
-    formData.append("password", pass);
-    formData.append("username", username);
-    formData.append("invitationcode", invCode);
     alert("ja");
 }
 
