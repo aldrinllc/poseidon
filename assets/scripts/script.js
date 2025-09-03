@@ -31,7 +31,7 @@ function rsb(event) {
     formData.append("invitationcode", invCode);
 
     // Send data to your PHP file
-    fetch("/../../../../auth/reg.php", {
+    fetch("/../../../auth/reg.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
