@@ -8,14 +8,32 @@
 }
 section {
     background-color: var(--background-body);
-    background-image: radial-gradient(at 0% 100%, rgba(0, 123, 255, 0.15) 0px, transparent 50%), radial-gradient(at 99% 1%, rgba(0, 123, 255, 0.15) 0px, transparent 50%);
+    background-image: radial-gradient(at 0% 100%, rgba(0, 123, 255, 0.15) 0px, transparent 50%),
+                      radial-gradient(at 99% 1%, rgba(0, 123, 255, 0.15) 0px, transparent 50%);
     margin: 0;
     color: var(--text-dark);
     display: flex;
-    min-height: 100vh;
+    min-height: 100vh;         /* ✅ fill screen height */
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px;             /* ✅ fixed invalid padding */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.form, .form2 {
+    position: relative;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;   /* ✅ stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;       /* ✅ inner spacing */
+    box-sizing: border-box;
+    min-height: auto;         /* ✅ removes hard height limit */
 }
 video{
     position: fixed;  /* stays in place */
@@ -45,18 +63,7 @@ video{
     height: auto;
 }
 
-.form{
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    backdrop-filter: blur(50px) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .input-box input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
@@ -71,23 +78,13 @@ video{
     border-radius: 20px;
 }
 
-.form2{
-    position: relative;
-    width: 400px;
-    height: 500px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    backdrop-filter: blur(50px) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 h2{
     font-size: 2em;
     color: #578bc7;
     text-align: center;
+     margin-bottom: 20px;      /* ✅ spacing below heading */
+    word-wrap: break-word;
 }
 /*CSS Config for input boxes*/
 .input-box{
@@ -178,6 +175,7 @@ button{
     font-size: 1em;
     color: #000;
     font-weight: 500;
+    box-sizing: border-box;
 }
 .register-link{
     font-size: .9em;

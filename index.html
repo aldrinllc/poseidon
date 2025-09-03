@@ -18,7 +18,7 @@
         </video>
 
         <div class="logo">
-            <a href="user/dashboard.php">
+            <a href="index.html">
                 <img src="assets/media/img/icon.png" alt="Logo">
             </a>
         </div>
@@ -26,7 +26,7 @@
         <div class="row justify-content-center w-100">
             <div class="col-11 col-sm-9 col-md-6 col-lg-4">
                 <div class="form p-4 shadow">
-                    <form action="user/dashboard.php" id="login" method="POST">
+                    <form id="login" onsubmit="lga(event)" >
                         <h2 class="mb-4">Login</h2>
                         <div class="input-box">
                             <span class="icon"><ion-icon name="mail"></ion-icon></span>
@@ -50,7 +50,6 @@
                 </div>
             </div>
         </div>
-
         <script src="assets/scripts/script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
