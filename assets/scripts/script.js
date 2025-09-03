@@ -24,24 +24,7 @@ function rsb(event) {
     formData.append("password", pass);
     formData.append("username", username);
     formData.append("invitationcode", invCode);
-    alert("ja")
-    fetch("assets/scripts/reg.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formData.toString()
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert(data);
-        if (data.includes("success")) {
-            // go back to top-level index.html
-            window.location.href = "../index.html";
-        }
-    })
-    .catch(error => {
-        console.error("Error:", error);
-        alert("Something went wrong. Check console.");
-    });
+    alert("ja");
 }
 
 
