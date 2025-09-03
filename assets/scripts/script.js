@@ -31,7 +31,7 @@ function rsb(event) {
     formData.append("invitationcode", invCode);
 
     // Send data to your PHP file
-    fetch("../../tests/reg.php", {
+    fetch("../../../../auth/reg.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -59,7 +59,7 @@ function lga(event){
     const formData = new URLSearchParams();
     formData.append("email",email);
     formData.append("password",password);
-    fetch("../../tests/verify.php",{
+    fetch("../../../../auth/verify.php",{
         method: "POST",
         body:formData,
     })
